@@ -6,11 +6,14 @@
     var about = getElementById('#about');
     var port = getElementById('#port');
     
-    function switchDivTo(div, otherDiv, otherDiv2) {
-      div.style.display = 'block';
+    function switchDivTo(div1, otherDiv, otherDiv2) {
+      div1.style.display = 'block';
       otherDiv.style.display = 'none';
       otherDiv2.style.display = 'none';
     }
+    
+    switchDivTo(home, about, port);
+    
   </script>
   
   <head>
