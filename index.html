@@ -1,12 +1,26 @@
 <html>
+  
+  <script>
+    
+    var home = getElementById('#home');
+    var about = getElementById('#about');
+    var port = getElementById('#port');
+    
+    function switchDivTo(div, otherDiv, otherDiv2) {
+      div.style.display = 'block';
+      otherDiv.style.display = 'none';
+      otherDiv2.style.display = 'none';
+    }
+  </script>
+  
   <head>
     
     <title> Kappa's Website </title>
     
     <div class="topnav">
-       <a class="active" href="#home">Home</a>
-       <a href="#about">About</a>
-       <a href="#port">Portfolio</a>
+       <a class="active" href="switchDivTo(home, about, port)">Home</a>
+       <a href="switchDivTo(about, home, port)">About</a>
+       <a href="switchDivTo(port, about, home)">Portfolio</a>
      </div> 
     
     <style>
@@ -69,6 +83,15 @@
       many ideas floating through my tiny brain that I just *have* to make. So that's my backstory. <br>
       Hopefully this helps you know me better.
       </p>
+      
+    </div>
+
+    <div id='#port'>
+        <h1> My Portfolio </h1>
+
+        <p>
+          This is empty right now, come back later to see something.
+        </p>
       
     </div>
     
